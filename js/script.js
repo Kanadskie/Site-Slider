@@ -96,36 +96,37 @@ function moveSlider(num) {
 
 }
 
-  function initDots() {
+function initDots() {
 
-    examples.forEach((example, index) => {
-      let dot = `<div class="slider-dots__item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
-      sliderDots.innerHTML += dot;
+  examples.forEach((example, index) => {
+    let dot = `<div class="slider-dots__item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
+    sliderDots.innerHTML += dot;
+  });
+
+  sliderDots.querySelectorAll(".slider-dots__item").forEach(dot => {
+    dot.addEventListener("click", function() {
+      moveSlider(this.dataset.index);
+    })
+  })
+
+}
+
+function initTitles() {
+
+  examples.forEach((example, index) => {
+      let titleLi = `<li class="completed-projects-list__item n${index} ${index === 0? "active" : ""}" data-index="${index}">${examples[index].city}</li>`;
+      sliderTitle.innerHTML += titleLi;
     });
 
-    sliderDots.querySelectorAll(".slider-dots__item").forEach(dot => {
-      dot.addEventListener("click", function() {
-        moveSlider(this.dataset.index);
+  sliderTitle.querySelectorAll(".completed-projects-list__item").forEach(titleLi => {
+
+      titleLi.addEventListener("click", function() {
+      moveSlider(this.dataset.index);
       })
-    })
 
-  }
+  })
 
-  function initTitles() {
-
-    examples.forEach((example, index) => {
-        let titleLi = `<li class="completed-projects-list__item n${index} ${index === 0? "active" : ""}" data-index="${index}">${examples[index].city}</li>`;
-        sliderTitle.innerHTML += titleLi;
-      });
-
-    sliderTitle.querySelectorAll(".completed-projects-list__item").forEach(titleLi => {
-
-        titleLi.addEventListener("click", function() {
-        moveSlider(this.dataset.index);
-        })
-
-      })
-    }
+}
 
 function initParamentrs() {
 
@@ -140,7 +141,7 @@ function initParamentrs() {
   let time = `<p class="parament-card-text n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${examples[index].time}</p>`;
   dataTime.innerHTML += time;
 
- });
+  });
 
 }
 

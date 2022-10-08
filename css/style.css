@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +14,8 @@ body {
     background-color: #131313;
     line-height: 1.5;
     color: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .wrapper {
@@ -71,9 +79,15 @@ body {
 }
 
 .completed-projects-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 100px 0;
 }
 
@@ -82,24 +96,58 @@ body {
 }
 
 .completed-parametrs {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 213px 34px 213px;
     grid-template-columns: 213px 213px;
+    -ms-grid-rows: 70px 34px 70px;
     grid-template-rows: 70px 70px;
     grid-gap: 34px;
     margin-bottom: 60px;
 }
 
+.completed-parametrs > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.completed-parametrs > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.completed-parametrs > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.completed-parametrs > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
 .completed-slider-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .completed-projects-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .completed-projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     padding: 0;
@@ -128,13 +176,15 @@ body {
     height: 483px;
 }
 
-.completed-projects-img .image {
+.completed-projects-img.image {
     position: absolute;
     background-size: cover;
     background-position: center center;
     width: 679px;
     height: 483px;
     opacity: 0;
+    -webkit-transition: opacity 1000ms ease-in;
+    -o-transition: opacity 1000ms ease-in;
     transition: opacity 1000ms ease-in;
   }
 
@@ -147,9 +197,15 @@ body {
 }
 
 .slider-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 30px;
 }
 
