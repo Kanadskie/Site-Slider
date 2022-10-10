@@ -176,7 +176,7 @@ body {
     height: 483px;
 }
 
-.completed-projects-img.image {
+.completed-projects-img .image {
     position: absolute;
     background-size: cover;
     background-position: center center;
@@ -186,7 +186,7 @@ body {
     -webkit-transition: opacity 1000ms ease-in;
     -o-transition: opacity 1000ms ease-in;
     transition: opacity 1000ms ease-in;
-  }
+}
 
   .completed-projects-img .image.active {
     opacity: 1;
