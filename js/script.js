@@ -1,27 +1,27 @@
 let examples = [
     {
-        url: '../images/image_1.png',
+        url: './images/image_1.png',
         city: 'Rostov LCD admiral',
         area: '81 m2',
         time: '3.5 months'
     },
 
     {
-        url: '../images/image_2.png',
+        url: './images/image_2.png',
         city: 'Sochi Thieves',
         area: '105 m2',
         time: '4 months'
     },
 
     {
-        url: '../images/image_3.png',
+        url: './images/image_3.png',
         city: 'Rostov Patriotic',
         area: '93 m2',
         time: '3 months'
     },
 
     {
-      url: '../images/image_4.png',
+      url: './images/image_4.png',
       city: 'Krasnodar BH',
       area: '266 m2',
       time: '6 months'
