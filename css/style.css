@@ -295,7 +295,7 @@ body {
     }
 
     .completed-projects-block {
-        padding: 0;
+        padding: 0 0 40px 0;
     }
 
     .completed-parametrs {
