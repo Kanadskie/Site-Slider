@@ -222,3 +222,114 @@ body {
 .slider-dots__item:hover, .slider-dots__item.active {
     opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .completed-projects-block {
+        flex-direction: column;
+    }
+
+    .title--align {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .title--card {
+        text-align: center;
+    }
+
+    .p {
+        margin: 0px auto 60px auto;
+        padding: 0;
+        text-align: center;
+        width: 500px;
+    }
+
+    .completed-parametrs {
+        grid-template-columns: 300px 300px;
+    }
+
+    .parament-card-text {
+        text-align: center;
+        width: 300px;
+    }
+
+    .completed-slider-nav {
+        justify-content: center;
+    }
+
+    .completed-projects-gallery {
+        margin-top: 80px;
+    }
+
+    .completed-projects-list {
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    .completed-projects-list__item {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .wrapper {
+        padding: 0 15px;
+    }
+
+    .title--card {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .p {
+        text-align: left;
+        width: 315px;
+        margin: 0px auto 35px auto;
+    }
+
+    .completed-parametrs {
+        grid-template-columns: 150px 150px;
+        grid-gap: 20px;
+    }
+
+    .parament-card-text {
+        text-align: left;
+        width: 150px;
+    }
+
+    .completed-projects-img {
+        width: 330px;
+        height: 235px;
+        margin: 0 auto;
+    }
+    
+    .completed-projects-img .image {
+        width: 330px;
+        height: 235px;
+    }
+
+    .completed-projects-list {
+        display: none;
+    }
+
+    .completed-parametrs {
+        margin-bottom: 40px;
+    }
+
+    .completed-projects-gallery {
+        margin-top: 60px;
+    }
+
+    .slider-dots__item {
+        width: 8px;
+        height: 8px;
+    }
+
+}
