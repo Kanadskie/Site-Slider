@@ -294,6 +294,10 @@ body {
         margin: 0px auto 35px auto;
     }
 
+    .completed-projects-block {
+        padding: 0;
+    }
+
     .completed-parametrs {
         grid-template-columns: 150px 150px;
         grid-gap: 20px;
